@@ -63,7 +63,7 @@ html,body {
     color: #000;
     display: block;
     padding: 9px 9px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .header nav li a:hover {
     color: rgb(89, 12, 233);
@@ -138,7 +138,7 @@ html,body {
 }
 
 .head-txt {
-    font-family: 'Merriweather', serif;
+    font-family: 'Merriweather', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 3.6rem;
     text-align: center;
     margin-bottom: 6px;
@@ -182,7 +182,7 @@ html,body {
     justify-content: center;
     align-items: center;
     font-size: 1.7rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 40px;
     transition: 700ms all;
     cursor: pointer;
@@ -296,6 +296,7 @@ html,body {
 
     .text-box .img-box {
         width: 150px;
+        margin-bottom: 15px;
         height: 150px;
     }
 
