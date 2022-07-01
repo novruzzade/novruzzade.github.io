@@ -21,6 +21,7 @@ body {
     box-sizing: border-box;
     overflow-x: hidden !important;
     width: 100%;
+    background-image: url("background.jpg");
     min-height: 100vh;
 }
 
@@ -85,6 +86,7 @@ body {
     position: relative;
     width: 35px;
     height: 35px;
+    cursor: pointer;
 }
 
 .menuLogo span {
