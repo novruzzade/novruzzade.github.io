@@ -2,7 +2,6 @@
 
 @media screen and (max-width: 992px) {
 
-
     .text span, p {
         text-align: center;
     }
@@ -39,6 +38,18 @@
         font-family: Font1;
         letter-spacing: 1;
     }
+    .image-card, .text-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper-2 {
+        max-width: 500px !important;
+    }
+    .image-card {
+        border: none;
+    }
 }
 
 @media screen and (max-width: 762px) {
@@ -46,7 +57,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+        position: fixed;
+        right: 10px;
+        top: 10px;
+     }
+     .myProfileImage {
+         transform: scale(0.7);
+     }
+
     .atr {
         /* flex: 2; */
     }
@@ -66,7 +84,13 @@
     }
     .nav.active {
         left: 0;
+        z-index: 99;
+        padding-right: 10px;
+        padding-left: 10px;
         right: 0;
+    }
+    .nav.active a {
+       margin: 0;
     }
     .nav a {
         text-align: center;
@@ -103,9 +127,14 @@
         height: 75px;
     }
 
+    .image-card, .text-card {
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
-@media screen and (max-width: 400px)  {
+@media screen and (max-width: 400px){
     .colTwo {
         margin-top: 40px !important;
     }
@@ -115,4 +144,15 @@
     .container {
         padding: 25px 25px 30px 25px;
     }
+    .wrapper-2 {
+        max-width: 300px !important;
+    }
+    .image-card {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .myProfileImage {
+        transform: scale(0.5);
+    }
+
 }

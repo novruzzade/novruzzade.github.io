@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="bg.css">
     <link rel="stylesheet" href="media.css">
 
     <!-- Bootstrap CSS -->
@@ -22,13 +21,8 @@
     <title>Novruzzadə Tunar</title>
 </head>
 <body>
-<!--Background  -->
-<div class="background-container">
-<div class="stars"></div>
-<div class="twinkling"></div>  
-
-
-<div id="section">
+<div class="allEmement">
+<section id="section">
     <header id="header">
         <div class="container-fluid">
             <div class="atr">
@@ -40,8 +34,8 @@
             </div>
         </div>
             <nav class="nav">
-                <a href="#">My Name</a>
-                <a href="#">Who am I ?</a>
+                <a href="#section">Who am I?</a>
+                <a href="#section-2">My About</a>
             </nav>
         </div>
     </header>
@@ -65,14 +59,43 @@
                                 <a href="https://www.facebook.com/tunar.novruzzade.35/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                                 <a href="https://github.com/Tunarr-techh" target="_blank"><i class="fa-brands fa-github"></i></a>
                             </div>
-                            <span id="autoTxt"></span>
+                            <span id="">Follow me :)</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+</section>
+
+<section id="section-2">
+    <div class="wrapper-2">
+        <div class="my-about">
+            <div class="row">
+                <div class="col-lg-4 image-card">
+                    <img src="my-logo.png" class="myProfileImage" alt="" width="170" height="150">
+                    <h2>Novruzzade Tunar</h2>
+                </div>
+                <div class="col-lg-8 text-card">
+                    <div class="text">
+                        <p class="mt-1">I am from Azerbaijan and I live in the city of Mingachevir. My favorite activities are first coding, then playing video games, then playing soccer. I post about 'FrontEnd Developing' on Instagram Social Platform.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
 <script src="Assets/js/bootstrap.bundle.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
@@ -83,12 +106,6 @@ let text = new Typed(".auto-text",{
    loop: true
 });
 
-let text2 = new Typed("#autoTxt",{
-   strings: ["Follow me :)","and Become Programmer."],
-   typeSpeed: 70,
-   backSpeed: 30,
-   loop: true
-});
 
 </script>
 <script>
