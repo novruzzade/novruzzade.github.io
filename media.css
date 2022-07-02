@@ -44,9 +44,6 @@
         justify-content: center;
     }
 
-    .wrapper-2 {
-        max-width: 500px !important;
-    }
     .image-card {
         border: none;
     }
@@ -88,6 +85,9 @@
         padding-right: 10px;
         padding-left: 10px;
         right: 0;
+    }
+    .wrapper-2 {
+        max-width: 440px !important;
     }
     .nav.active a {
        margin: 0;
@@ -134,7 +134,7 @@
 
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 425px){
     .colTwo {
         margin-top: 40px !important;
     }
