@@ -145,7 +145,8 @@
         padding: 25px 25px 30px 25px;
     }
     .wrapper-2 {
-        max-width: 300px !important;
+       width: 255px;
+       position: static;
     }
     .image-card {
         flex-direction: column;
@@ -153,6 +154,10 @@
     }
     .myProfileImage {
         transform: scale(0.5);
+    }
+    .container {
+        padding: 0 !important;
+        margin: 0 auto;
     }
 
 }
