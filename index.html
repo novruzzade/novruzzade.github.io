@@ -3,87 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="media.css">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
-    <!-- Icon -->
-    <link rel="shortcut icon" href="my-logo.ico" type="image/x-icon">
-
-    <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Novruzzadə Tunar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="asset/owl.carousel.css">
+    <link rel="stylesheet" href="asset/owl.carousel.min.css">
+    <title>Book Store</title>
 </head>
-<body>
+<body onload="background()">
 
-<section id="section">
-    <header id="header">
-        <div class="container-fluid">
-            <div class="atr">
-            <a href="" class="logo">Tn</a>
-            <div class="menuLogo">
-                <span></span>
-                <span></span>
-                <span></span>
+    <section id="section-1" class="section">
+    <div class="overlay"></div>
+    <header class="header">
+        <div class="heading-part" id="hding">
+            <h2 class="logo-txt">TBOOK</h2>
+            <div class="contain-menu">
+                <span class="osduraq"></span>
+                <span class="osduraq"></span>
+                <span class="osduraq"></span>
             </div>
         </div>
-            <nav class="nav">
-                <a href="#section">Who am I?</a>
-                <a href="#section-2">My About</a>
-            </nav>
-        </div>
+        <nav class="nav" id="nav">
+               <a href="#" class="">Ana Seyfe</a>
+               <a href="#" class=""><span style="color: #0080FF;">AZ</span> Kitablar</a>
+               <a href="#" class=""><span style="color: #0080FF;">TR</span> Kitablar</a>
+               <a href="#" class="">Hakkımızda</a>
+               <a href="#" class="">Əlaqə</a>   
+        </nav>
     </header>
-
-        <div class="container">
-            <div class="contact">
-                <div class="row">
-                    <div class="col-lg-4 colOne">
-                        <img src="my-logo.png" class="myPhoto" alt="">
-                        <div class="contact-text">
-                            <h2>Novruzzade Tunar</h2>
-                            <p>FrontEnd Developer</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 colTwo mt-5">
-                        <div class="text">
-                            <span class="auto-text"></span>
-                            <p class="mt-1">I'm Tunar, I'm 14 and I've been working in FrontEnd Developing for 1 year</p>
-                            <div class="social-media mb-4">
-                                <a href="https://www.instagram.com/n_tunar.frontend/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.facebook.com/tunar.novruzzade.35/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                                <a href="https://github.com/Tunarr-techh" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            </div>
-                            <span id="">Follow me :)</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="wrapper">
+            <div class="text-box">
+                İSTƏNİLƏN ZÖVQƏ UYĞUN KİTABLAR
+            </div>
+            <div class="btn-box">
+                <a href="#section-2" class="down">
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
             </div>
         </div>
 </section>
 
 <section id="section-2">
-    <div class="wrapper-2">
-        <div class="my-about">
-            <div class="row">
-                <div class="col-lg-4 image-card">
-                    <img src="my-logo.png" class="myProfileImage" alt="" width="170" height="150">
-                    <h2>Novruzzade Tunar</h2>
-                </div>
-                <div class="col-lg-8 text-card">
-                    <div class="text">
-                        <p class="mt-1">I am from Azerbaijan and I live in the city of Mingachevir. My favorite activities are first coding, then playing video games, then playing soccer. I post about 'FrontEnd Developing' on Instagram Social Platform.</p>
+ <div class="content">
+    <div class="heading-txt">
+        The newest books
+    </div>
+    <main class="main">
+        <div class="row-1">
+            <div class="owl-carousel owl-theme">
+
+                <div class="item">
+                    <div class="box">
+                        <div class="book-image">
+                            <img src="image/book-1.jpg" alt="" width="80" height="200">
+                        </div>
+                        <div class="detail">
+                            <div class="book-name text-center">
+                                Fareler ve Insanlar
+                            </div>
+                            <div class="book-detail text-center">
+                                insanlar artiq dunyada olmak istemiyo
+                            </div>
+                            <div class="book-price">
+                                <a href="">
+                                    AL
+                                </a>
+                                <span class="d-block">
+                                    7₼
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="book-image">
+                            <img src="image/book-1.jpg" alt="" width="80" height="200">
+                        </div>
+                        <div class="detail">
+                            <div class="book-name text-center">
+                                Fareler ve Insanlar
+                            </div>
+                            <div class="book-detail text-center">
+                                insanlar artiq dunyada olmak istemiyo
+                            </div>
+                            <div class="book-price">
+                                <a href="">
+                                    AL
+                                </a>
+                                <span class="d-block">
+                                    7₼
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="book-image">
+                            <img src="image/book-1.jpg" alt="" width="80" height="200">
+                        </div>
+                        <div class="detail">
+                            <div class="book-name text-center">
+                                Fareler ve Insanlar
+                            </div>
+                            <div class="book-detail text-center">
+                                insanlar artiq dunyada olmak istemiyo
+                            </div>
+                            <div class="book-price">
+                                <a href="">
+                                    AL
+                                </a>
+                                <span class="d-block">
+                                    7₼
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="book-image">
+                            <img src="image/book-1.jpg" alt="" width="80" height="200">
+                        </div>
+                        <div class="detail">
+                            <div class="book-name text-center">
+                                Fareler ve Insanlar
+                            </div>
+                            <div class="book-detail text-center">
+                                insanlar artiq dunyada olmak istemiyo
+                            </div>
+                            <div class="book-price">
+                                <a href="">
+                                    AL
+                                </a>
+                                <span class="d-block">
+                                    7₼
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="book-image">
+                            <img src="image/book-1.jpg" alt="" width="80" height="200">
+                        </div>
+                        <div class="detail">
+                            <div class="book-name text-center">
+                                Fareler ve Insanlar
+                            </div>
+                            <div class="book-detail text-center">
+                                insanlar artiq dunyada olmak istemiyo
+                            </div>
+                            <div class="book-price">
+                                <a href="">
+                                    AL
+                                </a>
+                                <span class="d-block">
+                                    7₼
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="book-image">
+                            <img src="image/book-1.jpg" alt="" width="80" height="200">
+                        </div>
+                        <div class="detail">
+                            <div class="book-name text-center">
+                                Fareler ve Insanlar
+                            </div>
+                            <div class="book-detail text-center">
+                                insanlar artiq dunyada olmak istemiyo
+                            </div>
+                            <div class="book-price">
+                                <a href="">
+                                    AL
+                                </a>
+                                <span class="d-block">
+                                    7₼
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="book-image">
+                            <img src="image/book-1.jpg" alt="" width="80" height="200">
+                        </div>
+                        <div class="detail">
+                            <div class="book-name text-center">
+                                Fareler ve Insanlar
+                            </div>
+                            <div class="book-detail text-center">
+                                insanlar artiq dunyada olmak istemiyo
+                            </div>
+                            <div class="book-price">
+                                <a href="">
+                                    AL
+                                </a>
+                                <span class="d-block">
+                                    7₼
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
-    </div>
+    </main>
+  </div>
 </section>
+    
+
+
+
+
+    
 
 
 
@@ -95,29 +240,79 @@
 
 
 
+<!-- JavaScript Bundle with Popper -->
+<script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="asset/owl.carousel.min.js"></script>
 
-<script src="Assets/js/bootstrap.bundle.min.js"></script> 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
-let text = new Typed(".auto-text",{
-   strings: ["I am FrontEnd Developer","I am Sleeping","I am eating..."],
-   typeSpeed: 110,
-   backSpeed: 100,
-   loop: true
+$(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:false,
+        autoplay:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:true,
+        responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:4,
+            nav:false
+        }
+    }
+});
+
+
+
+  $(".contain-menu").click(function(){
+      $(".nav").toggleClass("active");
+      $(".contain-menu i").toggleClass("fa-book-open");
+      $(this).toggleClass("show");
+      $("body").toggleClass("overflow");
+      $("header").css({
+          background: "#222"
+      });
+      if($(".contain-menu").hasClass("show")) {
+          $(".down").attr("href","#");
+      }else {
+          $(".down").attr("href","#section-2");
+     }
+  });
+
+  $("#nav a").click(function(){
+    $(".nav").removeClass("active");
+    $("body").removeClass("overflow");
+    $(".contain-menu").removeClass("show")
+});
+  $(window).scroll(function(){
+      if($(window).scrollTop() > 90) {
+          $(".header").css({
+             position: "fixed",
+             top: "0",
+             left: "0", 
+             zIndex: "10",
+             borderBottom: "2px solid #ccc",
+             background: "#222222db"
+          });
+      }else {
+          $(".header").css({
+              position: "static",
+              borderBottom: "1px solid #ccc",
+              background: "transparent"
+          });
+      }
+  });
+
+
+
 });
 
 
 </script>
-<script>
-    $(document).ready(function() {
-
-      $(".menuLogo").click(function() {
-          $(this).toggleClass("active-2");
-          $(".nav").toggleClass("active")
-      });
-    });
-</script>
-
 
 </body>
 </html>
