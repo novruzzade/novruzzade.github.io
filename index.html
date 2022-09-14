@@ -15,6 +15,10 @@
 </head>
 <body onload="background()">
 
+    <div id="preloader">
+
+    </div>
+
     <section id="section-1" class="section">
     <div class="overlay"></div>
     <header class="header">
@@ -114,7 +118,7 @@
                                 insanlar artiq dunyada olmak istemiyo
                             </div>
                             <div class="book-price">
-                                <a href="">
+                                <a href="" class="buy">
                                     AL
                                 </a>
                                 <span class="d-block">
@@ -137,7 +141,7 @@
                                 insanlar artiq dunyada olmak istemiyo
                             </div>
                             <div class="book-price">
-                                <a href="">
+                                <a href="" class="buy">
                                     AL
                                 </a>
                                 <span class="d-block">
@@ -160,7 +164,7 @@
                                 insanlar artiq dunyada olmak istemiyo
                             </div>
                             <div class="book-price">
-                                <a href="">
+                                <a href="" class="buy">
                                     AL
                                 </a>
                                 <span class="d-block">
@@ -183,7 +187,7 @@
                                 insanlar artiq dunyada olmak istemiyo
                             </div>
                             <div class="book-price">
-                                <a href="">
+                                <a href="" class="buy">
                                     AL
                                 </a>
                                 <span class="d-block">
@@ -206,7 +210,7 @@
                                 insanlar artiq dunyada olmak istemiyo
                             </div>
                             <div class="book-price">
-                                <a href="">
+                                <a href="" class="buy">
                                     AL
                                 </a>
                                 <span class="d-block">
@@ -224,18 +228,6 @@
   </div>
 </section>
     
-
-
-
-
-    
-
-
-
-
-
-
-
 
 
 
@@ -284,12 +276,13 @@ $(document).ready(function(){
   });
 
   $("#nav a").click(function(){
+
     $(".nav").removeClass("active");
     $("body").removeClass("overflow");
     $(".contain-menu").removeClass("show")
 });
   $(window).scroll(function(){
-      if($(window).scrollTop() > 90) {
+      if($(window).scrollTop() > 80) {
           $(".header").css({
              position: "fixed",
              top: "0",

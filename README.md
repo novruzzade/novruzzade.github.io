@@ -1,2 +1,0 @@
-# novruzzade.github.io
-hello
