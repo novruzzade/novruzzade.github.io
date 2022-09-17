@@ -115,7 +115,8 @@ section {
     display: flex;
     width: 100%;
     padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 10px;
+    padding: 0;
     align-items: center;
     justify-content: space-between;
 }
@@ -200,6 +201,7 @@ section {
     .book-price a {
         padding: 5px 14px !important;
         border-radius: 22px;
+        font-weight: 500;
         transform: translateY(-4px);
     }
 
