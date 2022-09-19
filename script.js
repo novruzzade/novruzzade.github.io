@@ -8,17 +8,20 @@ window.onload = function() {
            preloader.style.opacity = "1";
            preloader.style.visibility = "hidden";
            preloader.style.display = "none";
-       }, 600); 
+       }, 800); 
        document.querySelector(".text-box").style = "opacity: 1";
        document.querySelector(".btn-box").style = "opacity: 1";
        document.querySelector(".overlay").style = "background-color: rgb(0 0 0 / 42%)";
 };
 
-setInterval(function(){
-    if(counter == images.length) {
-      counter = 0;   
-    } 
-    section.style.backgroundImage = images[counter];
-    counter++;
-},4000)   
+  setInterval(function(){
+      if(counter == images.length) {
+        counter = 0;   
+      } 
+      section.style.backgroundImage = images[counter];
+      counter++;
+  },9500);
+  
+
+
 
