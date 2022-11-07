@@ -17,9 +17,9 @@
     <link rel="shortcut icon" href="image/my-logo.ico" type="image/x-icon">
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Novruzzadə Tunar</title>
+    <title>I'am Tunar :)</title>
 </head>
-<body>
+<body onscroll="onscrollBody()">
 <div id="particles-js">
 </div>
 <header id="header">
@@ -34,8 +34,8 @@
         </div>
     </div>
         <nav class="nav">
-            <a href="#section">Who am I?</a>
-            <a href="#section-2">My About</a>
+            <a href="#section">Who am I</a>
+            <a href="#section-2">About me</a>
         </nav>
     </div>
 </header>
@@ -53,7 +53,7 @@
                         </div>
                         <div class="colTwo mt-5">
                             <div class="text">
-                                <span class="auto-text"></span>
+                                <span><</span><span>code</span><span>></span> <span class="auto-text"></span> <span><</span><span>/code</span><span>></span>
                                 <p class="mt-1">I'm Tunar, I'm 14 and I've been working in FrontEnd Developing for 1 year</p>
                                 <div class="social-media mb-4">
                                     <a href="https://www.instagram.com/n_tunar.frontend/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -85,6 +85,32 @@
             </div>
         </div>
     </div>
+    <div class="skill-box">
+        <div class="skill-wrap">
+            <div class="limit-group">
+                <div class="limit html">
+                    <div class="color-part" id="part1"></div>
+                    <span class="limit-name">HTML</span> (<span id="faiz-limit" style="font-size: 13px; "></span>)
+                </div>
+                <div class="limit css">
+                    <div class="color-part" id="part2"></div>
+                    <span class="limit-name">CSS</span>  (<span id="faiz-limit2" style="font-size: 13px; "></span>)
+                </div>
+                <div class="limit javascript">
+                    <div class="color-part" id="part3"></div>
+                    <span class="limit-name">JavaScript</span> (<span id="faiz-limit3" style="font-size: 13px; "></span>)
+                </div>
+                <div class="limit py">
+                    <div class="color-part" id="part4"></div>
+                    <span class="limit-name">Python</span> (<span id="faiz-limit4" style="font-size: 13px; "></span>)
+                </div>
+                <div class="limit eng">
+                    <div class="color-part" id="part5"></div>
+                    <span class="limit-name">English</span>  (<span id="faiz-limit5" style="font-size: 13px; "></span>)
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
@@ -101,7 +127,7 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
 let text = new Typed(".auto-text",{
-   strings: ["I am Junior FrontEnd Developer","I am Sleeping","I am coding..."],
+   strings: ["I am Junior FrontEnd Developer","I am Sleeping","I am coding...","I am Boring..."],
    typeSpeed: 110,
    backSpeed: 100,
    loop: true
@@ -118,11 +144,93 @@ let text = new Typed(".auto-text",{
       });
     });
 
+
+    let len1 = 0;
+    let spanText = document.getElementById("faiz-limit")
+    let htmlColor = document.getElementById("part1")
+
+    let len2 = 0;
+    let spanText2 = document.getElementById("faiz-limit2")
+    let htmlColor2 = document.getElementById("part2")
+
+    let len3 = 0;
+    let spanText3 = document.getElementById("faiz-limit3")
+    let htmlColor3 = document.getElementById("part3")
+
+    let len4 = 0;
+    let spanText4 = document.getElementById("faiz-limit4")
+    let htmlColor4 = document.getElementById("part4")
+
+    let len5 = 0;
+    let spanText5 = document.getElementById("faiz-limit5")
+    let htmlColor5 = document.getElementById("part5")
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+           
+         } else {
+           
+         }
+}
+
     window.onload = function() {
+
         document.querySelector(".container").style.opacity = "1";
         document.querySelector(".wrapper-2").style.opacity = "1";
         document.getElementById("header").style.opacity = "1";
-    }
+
+      
+        let myInterval1 = setInterval(() => {
+            len1 = len1 + 1
+            if (len1 == 80) {
+                clearInterval(myInterval1)
+            }
+            spanText.innerHTML = len1 + "%";
+            htmlColor.style.width = `${len1}%`
+        }, 50);
+
+        let myInterval2 = setInterval(() => {
+            len2 = len2 + 1
+            if (len2 == 70) {
+                clearInterval(myInterval2)
+            }
+            spanText2.innerHTML = len2 + "%";
+            htmlColor2.style.width = `${len2}%`
+        }, 50);
+
+        let myInterval3 = setInterval(() => {
+            len3 = len3 + 1
+            if (len3 == 55) {
+                clearInterval(myInterval3)
+            }
+            spanText3.innerHTML = len3 + "%";
+            htmlColor3.style.width = `${len3}%`
+        }, 50);
+
+        let myInterval4 = setInterval(() => {
+            len4 = len4 + 1
+            if (len4 == 45) {
+                clearInterval(myInterval4)
+            }
+            spanText4.innerHTML = len4 + "%";
+            htmlColor4.style.width = `${len4}%`
+        }, 50);
+
+        let myInterval5 = setInterval(() => {
+            len5 = len5 + 1
+            if (len5 == 40) {
+                clearInterval(myInterval5)
+            }
+            spanText5.innerHTML = len5 + "%";
+            htmlColor5.style.width = `${len5}%`
+        }, 50);
+    
+       
+
+
+}
 </script>
 
 
