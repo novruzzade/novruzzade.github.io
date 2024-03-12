@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&display=swap');
+
+* {
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: font1;
+    src: url(Asset/ProggyTiny.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(Asset/coffee-font.ttf);
+}
+body {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden !important;
+   box-sizing: border-box;
+}
+.fixed-load {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+.text-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    z-index: 1;
+}
+
+.text-content .auto-type {
+    /* font-style: italic; */
+    font-size: 3em;
+    font-family: font1;
+    color: #48F947;
+    transition: 650ms opacity;
+}
+
+.typed-cursor {
+    font-size: 1.9em;
+    color: #48F947;
+    transition: 10ms all;
+}
+
+.fixed-load .part-1 {
+    float: left;
+    width: 100%;
+    height: 100%;
+    transition: 40ms width linear;
+    z-index: 98;
+    background-color: #1D1B1C;
+}
+/* Animation */
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff ;
+    position: relative;
+}
+
+.social-box {
+    width: 80px;
+    height: 30px;
+    position: fixed;
+    display: flex;
+    gap: 7px;
+    top: 10px;
+    justify-content: center;
+    right: 10px;
+    z-index: 3;
+    /* background-color: red; */
+}
+
+.social-box .box a {
+    font-size: 21px;
+    transition: .4s all ease;
+    text-align: center;
+    display: inline-block;
+}
+.social-box .box a:hover {
+    color: coral;
+    transform: translateY(2px);
+}
+
+.container-center {
+  
+    width: 70%;
+    min-height: 600px;
+    /* border: 1px solid rebeccapurple; */
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.middle-box {
+    width: 50%;
+    margin: 0 auto;
+    min-height: 300px;
+    box-shadow: 0 0 27px 1px #1D1B1C;
+    display: flex;
+    justify-content: center;
+    transition: 900ms all;
+    align-items: center;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    z-index: 4;
+    position: relative;
+}
+
+.text-box {
+    font-size: 2.2em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 15px;
+    font-family: font2;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    color: rebeccapurple;
+}
+
+.text-box.front {
+    backface-visibility: hidden;
+    z-index: 2;
+    color: #ccc;    
+    background-color: #222;
+}
+
+.text-box.back {
+    transform: rotateY(180deg);
+    z-index: 1;
+    background-color: #ccc;
+    font-size: 1.5em;
+    color: #222;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: font1;
+}
+.text-box .img-box {
+    width: 60px;
+    height: 50px;
+}
+.text-box .img-box img {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.middle-box.active:hover {
+    transform: rotateY(180deg);
+}
+
+
+
